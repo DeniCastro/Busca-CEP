@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca CEP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div id="loading"><p>Carregando...</p></div>
+
+    <section class="hotpink">      
+        
+        <div class="curve">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div> 
+
+        <div class="buscacep">
+            <h1>Busca Cep</h1>
+        </div>
+
+        <div class="container">            
+                
+            <div class="row" id="row">
+                <div class="col-md-12 text-center">
+                        <div class="form">
+                            <input type="text" name="cep" id="cepDigitado" placeholder="Insira seu cep aqui">
+                            <label for="cepDigitado"></label>
+                        </div>
+                <div>
+                        <button class="button-49" onclick="pesquisaCep()" role="button">Pesquisar!</button>
+                </div>                
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div >
+                        
+                        <table class="table table-stripped mt-5">
+                        
+                            <tr>
+                                <th>Logradouro</th>
+                                <th>Bairro</th>
+                                <th>Cidade</th>
+                                <th>Uf</th>
+                                <th>CEP</th>
+                                <th>Complemento</th>
+                            </tr>
+
+                            <tbody id="conteudo"></tbody>
+                        
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <div class="spacer layer1"></div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
